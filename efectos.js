@@ -1,3 +1,4 @@
+$(document).ready(function(){
 // Scroll elementos menu
         var nuestroProducto = $('#nuestro-producto').offset().top,
             portafolio = $('#imagenes').offset().top;
@@ -14,21 +15,21 @@
         $('#btn-portafolio').on('click', function(e){
             e.preventDefault();
             $('html, body').animate({
-                scrollTop: menu
+                scrollTop: portafolio
             }, 500);
         });
     
         $('#btn-nuestros-servicios').on('click', function(e){
             e.preventDefault();
             $('html, body').animate({
-                scrollTop: galeria -25
+                scrollTop: nuestrosServicios -25
             }, 500);
         });
         
         $('#btn-contacto').on('click', function(e){
             e.preventDefault();
             $('html, body').animate({
-                scrollTop: ubicacion
+                scrollTop: contacto
             }, 500);
         });
     });
